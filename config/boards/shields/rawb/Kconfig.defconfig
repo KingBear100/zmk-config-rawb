@@ -1,0 +1,6 @@
+if SHIELD_RAWB
+
+config ZMK_KEYBOARD_NAME
+    default "rawb"
+
+endif
