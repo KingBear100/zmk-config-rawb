@@ -54,7 +54,7 @@
             bindings = <
             &kp PAGE_DOWN &kp C_AC_BACK &kp UP &kp C_AC_FORWARD &kp PAGE_UP 
             &kp K_UNDO &kp LEFT &kp DOWN &kp RIGHT &kp C_AC_REFRESH 
-            K_AGAIN &kp K_CUT &kp K_COPY &kp K_PASTE &kp F20 
+            &kp K_AGAIN &kp K_CUT &kp K_COPY &kp K_PASTE &kp F20 
                                          &to 0 &kp F20 &trans &kp F20 
           >;
         };
