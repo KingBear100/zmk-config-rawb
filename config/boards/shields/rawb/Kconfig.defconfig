@@ -19,3 +19,5 @@ config ssd1306
     default y
 
 endif
+
+endif
