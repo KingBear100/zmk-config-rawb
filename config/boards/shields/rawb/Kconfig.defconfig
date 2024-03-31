@@ -7,9 +7,6 @@ endif
 
 if SHIELD_RAWB
 
-config ZMK_SPLIT
-    default y
-
 if ZMK_DISPLAY
 
 config I2C
