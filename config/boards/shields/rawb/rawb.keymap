@@ -16,7 +16,7 @@
             &kp F &kp D &kp N &kp I &kp G  
             &kp S &kp T &kp H &kp E &kp O 
             &kp C &kp W &kp R &kp Z &kp U 
-                              &kp ENTER &lt 1 SPACE &kp LEFT_SHIFT &kp BSPC &kp K_MUTE
+                              &kp ENTER &lt 1 SPACE &kp LEFT_SHIFT &kp BSPC &kp C_MUTE
           >;
           sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
@@ -26,7 +26,7 @@
             &kp J &kp K &kp M &kp DOT &kp COMMA 
             &kp Y &kp P &kp L &kp Q &to 2 
             &kp X &kp B &kp V &kp Z &to 3 
-                              &none &none &kp LEFT_SHIFT &kp LEFT_CONTROL &kp K_MUTE
+                              &none &none &kp LEFT_SHIFT &kp LEFT_CONTROL &kp C_MUTE
             >;
         };
         
@@ -35,7 +35,7 @@
             &kp KP_N6 &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp DLLR 
             &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_N4 &kp KP_N5 
             &kp KP_EQUAL &kp KP_PLUS &kp KP_MINUS &kp KP_N0 &kp COMMA 
-                                                  &to 0 &kp PERCENT &kp HASH &kp CARET &kp K_MUTE
+                                                  &to 0 &kp PERCENT &kp HASH &kp CARET &kp C_MUTE
             >;
         };
         
@@ -44,7 +44,7 @@
             &kp LEFT_BRACKET &kp LBRC &kp LPAR &kp AT &kp CARET 
             &kp COLON &kp SEMICOLON &kp QUESTION &kp EXCL &kp SLASH 
             &kp RIGHT_BRACKET &kp RBRC &kp RPAR &kp AMPS &kp ASTRK 
-                                                      &to 0 &to 4 &to 5 &to 6 &kp K_MUTE
+                                                      &to 0 &to 4 &to 5 &to 6 &kp C_MUTE
             >;
         };
         
@@ -53,7 +53,7 @@
             &kp PAGE_DOWN &kp C_AC_BACK &kp UP &kp C_AC_FORWARD &kp PAGE_UP 
             &kp K_UNDO &kp LEFT &kp DOWN &kp RIGHT &kp C_AC_REFRESH 
             &kp K_AGAIN &kp K_CUT &kp K_COPY &kp K_PASTE &none 
-                                         &to 0 &none &trans &none &kp K_MUTE
+                                         &to 0 &none &trans &none &kp C_MUTE
           >;
         };
         
@@ -62,7 +62,7 @@
             &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 
             &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 
             &none &none &none &kp F11 &kp F12 
-                                    &to 0 &none &trans &none &kp K_MUTE
+                                    &to 0 &none &trans &none &kp C_MUTE
             >;
         };
         
@@ -71,7 +71,7 @@
             &bt BT_CLR &none &none &none &none 
             &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none 
             &none &none &none &none &none 
-                                    &to 0 &none &none &bootloader &kp K_MUTE
+                                    &to 0 &none &none &bootloader &kp C_MUTE
           >;
         };
     };
