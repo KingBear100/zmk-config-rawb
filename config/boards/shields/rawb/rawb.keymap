@@ -17,8 +17,8 @@
             &kp S &kp T &kp H &kp E &kp O 
             &kp C &kp W &kp R &kp Z &kp U 
                               &kp ENTER &lt 1 SPACE &kp LEFT_SHIFT &kp BSPC &kp C_MUTE
-          >;
-          sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            >;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
         
         layer1 {
