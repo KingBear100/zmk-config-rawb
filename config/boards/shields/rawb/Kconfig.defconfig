@@ -3,4 +3,7 @@ if SHIELD_RAWB
 config ZMK_KEYBOARD_NAME
     default "rawb"
 
+CONFIG_EC11=y
+CONFIG_EC11_TRIGGER_OWN_THREAD=y
+
 endif
