@@ -43,7 +43,7 @@
       combo_caps {
         timeout-ms = <50>;
         key-positions = <10 11 12>;
-        bindigns = <&kp CAPSLOCK>;
+        bindings = <&kp CAPSLOCK>;
       };
 
     };
