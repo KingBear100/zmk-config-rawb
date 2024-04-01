@@ -45,11 +45,11 @@
 
   / {
     behaviors {
-      td_mt: tap_dance_mod_tap {
+      td0: tap_dance_0 {
         compatible = "zmk,behavior-tap-dance";
         #bindings-cells = <0>;
         tapping-term-ms = <200>;
-        bindings = <&mt LSHIFT CAPSLOCK>, <&sk LCTRL>;
+        bindings = <&sk LSHIFT>, <&sk LCTRL>;
       };
     };
   };
@@ -63,7 +63,7 @@
             &kp F &kp D &kp N &kp I &kp G  
             &kp S &kp T &kp H &kp E &kp O 
             &kp C &kp W &kp R &kp Z &kp U 
-                              &kp ENTER &lt 1 SPACE &td_mt &kp BSPC &kp C_MUTE
+                              &kp ENTER &lt 1 SPACE &td0 &kp BSPC &kp C_MUTE
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
