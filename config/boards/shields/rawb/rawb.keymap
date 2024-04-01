@@ -40,6 +40,23 @@
         bindings = <&to 6>;
       };
 
+      combo_contr {
+        timeout-ms = <50>;
+        key-positions = <10 11 12>;
+        bindings = <&sk LCTRL>;
+      };
+
+    };
+  };
+
+  / {
+    behaviors {
+      td0: tap_dance_0 {
+        compatible = "zmk,behavior-tap-dance";
+        #bindings-cells = <0>;
+        tapping-term-ms = <200>;
+        bindings = <sk LSHIFT>, <&kp CAPS>;
+      };
     };
   };
 
@@ -52,7 +69,7 @@
             &kp F &kp D &kp N &kp I &kp G  
             &kp S &kp T &kp H &kp E &kp O 
             &kp C &kp W &kp R &kp Z &kp U 
-                              &kp ENTER &lt 1 SPACE &kp LEFT_SHIFT &kp BSPC &kp C_MUTE
+                              &kp ENTER &lt 1 SPACE &td0 &kp BSPC &kp C_MUTE
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
@@ -62,7 +79,7 @@
             &kp J &kp K &kp M &kp DOT &kp COMMA 
             &kp Y &kp P &kp L &kp Q &kp SEMICOLON 
             &kp X &kp B &kp V &kp Z &kp COLON 
-                              &none &none &kp LEFT_SHIFT &kp LEFT_CONTROL &kp C_MUTE
+                              &none &none &td0 &kt LEFT_CONTROL &kp C_MUTE
             >;
         };
         
@@ -104,9 +121,9 @@
         
         bt_layer {
             bindings = <
-            &bt BT_CLR &none &none &none &none 
-            &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none 
-            &none &ext_power EP_TOG &none &none &none 
+            &none &none &none &none &none 
+            &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none 
+            &ext_power EP_ON &ext_power EP_OFF &none &none &none 
                                     &to 0 &none &none &bootloader &kp C_MUTE
           >;
         };
