@@ -73,7 +73,7 @@
             &kp J &kp K &kp M &kp DOT &kp COMMA 
             &kp Y &kp P &kp L &kp Q &kp SEMICOLON 
             &kp X &kp B &kp V &kp Z &kp COLON 
-                              &none &none &td_mt &kt LEFT_CONTROL &kp C_MUTE
+                              &none &none &td0 &kt LEFT_CONTROL &kp C_MUTE
             >;
         };
         
