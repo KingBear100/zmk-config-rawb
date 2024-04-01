@@ -40,22 +40,16 @@
         bindings = <&to 6>;
       };
 
-      combo_contr {
-        timeout-ms = <50>;
-        key-positions = <10 11 12>;
-        bindings = <&sk LCTRL>;
-      };
-
     };
   };
 
   / {
     behaviors {
-      td0: tap_dance_0 {
+      td_mt: tap_dance_0 {
         compatible = "zmk,behavior-tap-dance";
         #bindings-cells = <0>;
         tapping-term-ms = <200>;
-        bindings = <sk LSHIFT>, <&kp CAPS>;
+        bindings = <&mt LSHIFT CAPSLOCK>, <&sk LCTRL>;
       };
     };
   };
@@ -69,7 +63,7 @@
             &kp F &kp D &kp N &kp I &kp G  
             &kp S &kp T &kp H &kp E &kp O 
             &kp C &kp W &kp R &kp Z &kp U 
-                              &kp ENTER &lt 1 SPACE &td0 &kp BSPC &kp C_MUTE
+                              &kp ENTER &lt 1 SPACE &td_mt &kp BSPC &kp C_MUTE
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
@@ -79,7 +73,7 @@
             &kp J &kp K &kp M &kp DOT &kp COMMA 
             &kp Y &kp P &kp L &kp Q &kp SEMICOLON 
             &kp X &kp B &kp V &kp Z &kp COLON 
-                              &none &none &td0 &kt LEFT_CONTROL &kp C_MUTE
+                              &none &none &td_mt &kt LEFT_CONTROL &kp C_MUTE
             >;
         };
         
