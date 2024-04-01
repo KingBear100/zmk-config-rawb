@@ -88,7 +88,7 @@
             bindings = <
             &kp PAGE_DOWN &kp C_AC_BACK &kp UP &kp C_AC_FORWARD &kp PAGE_UP 
             &kp LC(Z) &kp LEFT &kp DOWN &kp RIGHT &kp TAB 
-            &kp LC(Y) &kp LC(X) &kp LC(C) &kp LC(V) &ENTER 
+            &kp LC(Y) &kp LC(X) &kp LC(C) &kp LC(V) &kp ENTER 
                                          &to 0 &kp LS(LCTRL) &kp LC(F) &kp LEFT_WIN &kp C_MUTE
           >;
         };
