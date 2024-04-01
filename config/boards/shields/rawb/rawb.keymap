@@ -55,16 +55,6 @@
   };
 
   / {
-
-    behaviors {
-      td0: tap_dance_0 {
-        compatible = "zmk,behavior-tap-dance";
-        #bindings-cells = <0>;
-        tapping-term-ms = <200>;
-        bindings = <&sk LSHIFT>, <&sk LCTRL>;
-      };
-    };
-    
     keymap {
       compatible = "zmk,keymap";
   
@@ -85,6 +75,7 @@
             &kp X &kp B &kp V &kp Z &kp COLON 
                               &none &none &td0 &kt LEFT_CONTROL &kp C_MUTE
             >;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
         
         layer2 {
@@ -94,6 +85,7 @@
             &kp KP_EQUAL &kp KP_PLUS &kp KP_MINUS &kp KP_N0 &kp COMMA 
                                                   &to 0 &kp PERCENT &kp HASH &kp CARET &kp C_MUTE
             >;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
         
         layer3 {
@@ -103,6 +95,7 @@
             &kp RIGHT_BRACKET &kp RBRC &kp RPAR &kp AMPS &kp ASTRK 
                                                       &to 0 &kp LT &kp GT &kp TILDE &kp C_MUTE
             >;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
         
         layer4 {
@@ -112,6 +105,7 @@
             &kp LC(Y) &kp LC(X) &kp LC(C) &kp LC(V) &kp ENTER 
                                          &to 0 &kp LS(LCTRL) &kp LC(F) &kp LEFT_WIN &kp C_MUTE
           >;
+          sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
         
         layer5 {
@@ -121,6 +115,7 @@
             &none &none &none &kp F11 &kp F12 
                                     &to 0 &none &trans &none &kp C_MUTE
             >;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
         
         bt_layer {
@@ -130,6 +125,7 @@
             &ext_power EP_ON &ext_power EP_OFF &none &none &none 
                                     &to 0 &none &none &bootloader &kp C_MUTE
           >;
+          sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };
   };
