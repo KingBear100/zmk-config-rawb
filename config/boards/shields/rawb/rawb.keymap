@@ -60,8 +60,8 @@
         layer1 {
             bindings = <
             &kp J &kp K &kp M &kp DOT &kp COMMA 
-            &kp Y &kp P &kp L &kp Q &to 2 
-            &kp X &kp B &kp V &kp Z &to 3 
+            &kp Y &kp P &kp L &kp Q &kp SEMICOLON 
+            &kp X &kp B &kp V &kp Z &kp COLON 
                               &none &none &kp LEFT_SHIFT &kp LEFT_CONTROL &kp C_MUTE
             >;
         };
@@ -80,16 +80,16 @@
             &kp LEFT_BRACKET &kp LBRC &kp LPAR &kp AT &kp CARET 
             &kp COLON &kp SEMICOLON &kp QUESTION &kp EXCL &kp SLASH 
             &kp RIGHT_BRACKET &kp RBRC &kp RPAR &kp AMPS &kp ASTRK 
-                                                      &to 0 &to 4 &to 5 &to 6 &kp C_MUTE
+                                                      &to 0 &kp LT &kp GT &kp TILDE &kp C_MUTE
             >;
         };
         
         layer4 {
             bindings = <
             &kp PAGE_DOWN &kp C_AC_BACK &kp UP &kp C_AC_FORWARD &kp PAGE_UP 
-            &kp K_UNDO &kp LEFT &kp DOWN &kp RIGHT &kp C_AC_REFRESH 
-            &kp K_AGAIN &kp K_CUT &kp K_COPY &kp K_PASTE &none 
-                                         &to 0 &none &trans &none &kp C_MUTE
+            &kp LC(Z) &kp LEFT &kp DOWN &kp RIGHT &kp TAB 
+            &kp LC(Y) &kp LC(X) &kp LC(C) &kp LC(V) &ENTER 
+                                         &to 0 &kp LS(LCTRL) &kp LC(F) &kp LEFT_WIN &kp C_MUTE
           >;
         };
         
