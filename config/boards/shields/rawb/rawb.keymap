@@ -5,10 +5,9 @@
 
   &encoder {
     status = "okay";
-  };   
+  };
 
   / {
-
     combos {
       compatible = "zmk,combos";
       combo_num {
@@ -42,6 +41,9 @@
       };
 
     };
+  };
+
+  / {
 
     behaviors {
       td_mt: tap_dance_mod_tap {
@@ -51,7 +53,6 @@
         bindings = <&mt LSHIFT CAPSLOCK>, <&sk LCTRL>;
       };
     };
-  };
 
     keymap {
       compatible = "zmk,keymap";
