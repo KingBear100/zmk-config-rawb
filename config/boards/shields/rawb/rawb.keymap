@@ -5,9 +5,10 @@
 
   &encoder {
     status = "okay";
-  };
+  };   
 
   / {
+
     combos {
       compatible = "zmk,combos";
       combo_num {
@@ -41,11 +42,9 @@
       };
 
     };
-  };
 
-  / {
     behaviors {
-      td_mt: tap_dance_0 {
+      td_mt: tap_dance_mod_tap {
         compatible = "zmk,behavior-tap-dance";
         #bindings-cells = <0>;
         tapping-term-ms = <200>;
@@ -54,7 +53,6 @@
     };
   };
 
-  / {
     keymap {
       compatible = "zmk,keymap";
   
