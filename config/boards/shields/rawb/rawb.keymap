@@ -44,7 +44,6 @@
   };
 
   / {
-
     behaviors {
       td_mt: tap_dance_mod_tap {
         compatible = "zmk,behavior-tap-dance";
@@ -53,7 +52,9 @@
         bindings = <&mt LSHIFT CAPSLOCK>, <&sk LCTRL>;
       };
     };
+  };
 
+  / {
     keymap {
       compatible = "zmk,keymap";
   
