@@ -40,6 +40,12 @@
         bindings = <&to 6>;
       };
 
+      combo_caps {
+        timeout-ms = <50>;
+        key-positions = <10 11 12>;
+        bindigns = <&kp CAPSLOCK>;
+      }
+
     };
   };
 
@@ -49,7 +55,7 @@
         compatible = "zmk,behavior-tap-dance";
         #binding-cells = <0>;
         tapping-term-ms = <200>;
-        bindings = <&mt CAPSLOCK LSHIFT>, <&sk LCTRL>;
+        bindings = <&sk LSHIFT>, <&sk LCTRL>;
       };
     };
   };
