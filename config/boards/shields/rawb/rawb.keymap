@@ -74,7 +74,7 @@
             bindings = <
             &kp F &kp D &kp N &kp I &kp G  
             &kp S &kp T &kp H &kp E &kp O 
-            &kp C &kp W &kp R &kp Z &kp U 
+            &kp C &kp W &kp R &kp A &kp U 
                               &kp ENTER &lt 1 SPACE &td0 &kp BSPC &kp C_MUTE
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -85,7 +85,7 @@
             &kp J &kp K &kp M &kp DOT &kp COMMA 
             &kp Y &kp P &kp L &kp Q &kp SEMICOLON 
             &kp X &kp B &kp V &kp Z &kp COLON 
-                              &none &none &td0 &kt LEFT_CONTROL &kp C_MUTE
+                              &none &none &td0 &kt BSPC &kp C_MUTE
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
