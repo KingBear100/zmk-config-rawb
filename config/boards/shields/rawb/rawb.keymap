@@ -61,7 +61,7 @@
       combo_tb {
         timeout-ms = <50>;
         key-positions = <0 1>;
-        bindings = <&kp LC(LS(TAB))
+        bindings = <&kp LC(LS(TAB))>;
       };
 
     };
